@@ -26,6 +26,8 @@ jobs:
       # Step 4: Verify Docker image
       - name: List Docker images
         run: docker images
+      - name: check running containers
+        run: docker ps
 
       # Step 5: Run Docker container
       - name: Run Docker container
